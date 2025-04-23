@@ -28,11 +28,20 @@ This session covers the I2C protocol. We simulate communication between the PIC1
 
 ## TP 2 - SPI Communication [• View](./TP2%20-%20SPI/)
 
+This session covers the SPI protocol. We simulate communication between the PIC16F877A microcontroller and a 25AA256 EEPROM.
+
+<div align="center">
+
+![Proteus Setup with SPI Debugger](./Images/spi-proteus-setup-1.png)
+
+![Proteus Setup with SPI Debugger](./Images/spi-proteus-setup-2.png)
+
+</div>
+
 ## Notes
 
 - All simulations were created in Proteus 8.13.
 - Code is written in C using the MPLAB X IDE and XC8 compiler.
-- The use of the LCD is optional. The main focus is understanding the communication with the EEPROM using I2C.
 
 ## Related Repository
 
