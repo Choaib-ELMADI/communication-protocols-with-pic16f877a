@@ -64,11 +64,6 @@ void main(void) {
         Send_Byte_Data(data_to_write);          // Write data
         Stop_Bit();
 
-        LCD_Control(0x86);
-        if (data_to_write >= 100) LCD_Print_Byte((data_to_write / 100) + '0');
-        if (data_to_write >= 10) LCD_Print_Byte(((data_to_write / 10) % 10) + '0');
-        LCD_Print_Byte((data_to_write % 10) + '0');
-
         __delay_ms(1000);
 
         Start_Bit();
@@ -82,11 +77,6 @@ void main(void) {
         Send_NACK_Bit();
         Stop_Bit();
 
-        LCD_Control(0xC9);
-        if (received_data >= 100) LCD_Print_Byte((received_data / 100) + '0');
-        if (received_data >= 10) LCD_Print_Byte(((received_data / 10) % 10) + '0');
-        LCD_Print_Byte((received_data % 10) + '0');
-
         data_to_write++;
         __delay_ms(1000);
     }
@@ -98,16 +88,19 @@ void I2C_Init(int clock_init_value) {
     SSPADD = (unsigned char)clock_init_value;
     SSPCON = 0x28;
 }
+
 void Start_Bit() {
     SSPCON2bits.SEN = 1;
     while (SSPCON2bits.SEN);                    // Cleared automatically
     PIR1bits.SSPIF = 0;
 }
+
 void Repeated_Start() {
     SSPCON2bits.RSEN = 1;
     while (SSPCON2bits.RSEN);                   // Cleared automatically
     PIR1bits.SSPIF = 0;
 }
+
 void Send_Byte_Data(uint8_t data) {
     SSPBUF = data;
     while (!PIR1bits.SSPIF);                    // Set automatically
@@ -117,21 +110,25 @@ void Send_Byte_Data(uint8_t data) {
         Stop_Bit();
     }
 }
+
 uint8_t Receive_Byte_Data() {
     SSPCON2bits.RCEN = 1;
     while (!SSPSTATbits.BF);                    // Set automatically
     return SSPBUF;
 }
+
 void Send_ACK_Bit() {
     SSPCON2bits.ACKDT = 0;
     SSPCON2bits.ACKEN = 1;
     while (SSPCON2bits.ACKEN);                  // Cleared automatically
 }
+
 void Send_NACK_Bit() {
     SSPCON2bits.ACKDT = 1;
     SSPCON2bits.ACKEN = 1;
     while (SSPCON2bits.ACKEN);                  // Cleared automatically
 }
+
 void Stop_Bit() {
     SSPCON2bits.PEN = 1;
     while (SSPCON2bits.PEN);                    // Cleared automatically
@@ -144,6 +141,7 @@ void LCD_Init() {
     LCD_Control(0x0C);                          // LCD on and cursor off
     LCD_Control(0x01);                          // Clear screen
 }
+
 void LCD_Print_Byte(unsigned char data) {
     EN = 1;                                     // Enabled
     RS = 1;                                     // Data register
@@ -152,12 +150,14 @@ void LCD_Print_Byte(unsigned char data) {
     __delay_ms(5);
     EN = 0;                                     // Disabled
 }
+
 void LCD_Print_Bytes(const unsigned char *str, unsigned char len) {
     unsigned char i;
     for (i=0; i<len; ++i) {
         LCD_Print_Byte(str[i]);
     }
 }
+
 void LCD_Control(unsigned char cmd) {
     EN = 1;                                     // Enabled
     RS = 0;                                     // Instruction register
