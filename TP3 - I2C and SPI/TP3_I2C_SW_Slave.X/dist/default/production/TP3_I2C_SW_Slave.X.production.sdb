@@ -1,0 +1,158 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP3 - I2C and SPI\TP3_I2C_SW_Slave.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP3 - I2C and SPI\TP3_I2C_SW_Slave.X\utils.c
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+"52
+[v _Stop_Bit Stop_Bit `(v  1 e 1 0 ]
+[s S22 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h
+[s S31 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S36 . 1 `S22 1 . 1 0 `S31 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES36  1 e 1 @11 ]
+[s S265 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S274 . 1 `S265 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES274  1 e 1 @12 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S75 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"835
+[s S81 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S86 . 1 `S75 1 . 1 0 `S81 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES86  1 e 1 @20 ]
+[s S223 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S232 . 1 `S223 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES232  1 e 1 @135 ]
+[s S54 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1635
+[u S63 . 1 `S54 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES63  1 e 1 @140 ]
+[s S244 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1771
+[u S253 . 1 `S244 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES253  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+[s S132 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1884
+[s S141 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S146 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S152 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S157 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S162 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S167 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S172 . 1 `S132 1 . 1 0 `S141 1 . 1 0 `S146 1 . 1 0 `S152 1 . 1 0 `S157 1 . 1 0 `S162 1 . 1 0 `S167 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES172  1 e 1 @148 ]
+"6 C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP3 - I2C and SPI\TP3_I2C_SW_Slave.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+} 0
+"4 C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP3 - I2C and SPI\TP3_I2C_SW_Slave.X\utils.c
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+{
+[v I2C_Slave_Init@slave_address slave_address `i  1 p 2 0 ]
+"10
+} 0
