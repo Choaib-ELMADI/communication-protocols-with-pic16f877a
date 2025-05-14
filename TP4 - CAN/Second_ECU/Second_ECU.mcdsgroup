@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\First_ECU\First_ECU.mcpds
+Project1=Second_ECU.mcpds
+[ActiveProject]
+Index=1

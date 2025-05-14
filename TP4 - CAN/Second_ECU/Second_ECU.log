@@ -1,0 +1,27 @@
+0	1	mikroCdsPIC.exe -MSF -DBG -pP30F4013 -DL -SSA -O11111114 -fo1E-5 -N"C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP4 - CAN\Second_ECU\Second_ECU.mcpds" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for dsPIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for dsPIC\Uses\" -SP"C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP4 - CAN\Second_ECU\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for dsPIC\Uses\" -IP"C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP4 - CAN\Second_ECU\" "Second_ECU.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_ADC_1_p24FJ_p30.mcl" "__Lib_CAN_1.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_BitReverseComplex.mcl"	 
+diagnostics: 0	121	Loading...	 
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+warning: 382	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 408	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 434	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 460	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 486	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 512	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 538	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 564	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 590	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 616	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 642	1515	Time too small, no code generated	__Lib_Delays.c
+warning: 668	1515	Time too small, no code generated	__Lib_Delays.c
+diagnostics: 695	123	Compiled Successfully	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	Second_ECU.c
+warning: 88	1508	Implicit conversion of int to ptr	Second_ECU.c
+diagnostics: 94	123	Compiled Successfully	Second_ECU.c
+diagnostics: 0	127	All files Compiled in 93 ms	 
+hint: 0	1144	Used RX (bytes): 32 (100%)   Free RX (bytes): 0 (0%)	Used RX (bytes): 32 (100%)   Free RX (bytes): 0 (0%)
+hint: 0	1144	Static RAM (bytes): 23   Dynamic RAM (bytes): 2024	Static RAM (bytes): 23   Dynamic RAM (bytes): 2024
+hint: 0	1144	Used ROM (bytes): 2158 (7%)  Free ROM (bytes): 30610 (93%)	Used ROM (bytes): 2158 (7%)  Free ROM (bytes): 30610 (93%)
+diagnostics: 0	125	Project Linked Successfully	Second_ECU.mcpds
+diagnostics: 0	128	Linked in 172 ms	 
+diagnostics: 0	129	Project 'Second_ECU.mcpds' completed: 500 ms	 
+diagnostics: 0	103	Finished successfully: 14 May 2025, 12:27:38	Second_ECU.mcpds

@@ -1,0 +1,13 @@
+0	1	mikroCdsPIC.exe -MSF -DBG -pP30F4013 -DL -SSA -O11111114 -fo10 -N"C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP4 - CAN\First_ECU\First_ECU.mcpds" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for dsPIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for dsPIC\Uses\" -SP"C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP4 - CAN\First_ECU\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for dsPIC\Uses\" -IP"C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S4\Protocoles de Communication Embarqués\TP\TP4 - CAN\First_ECU\" "First_ECU.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_ADC_1_p24FJ_p30.mcl" "__Lib_CAN_1.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_BitReverseComplex.mcl"	 
+diagnostics: 0	121	Loading...	 
+diagnostics: 0	122	Compilation Started	First_ECU.c
+warning: 94	1508	Implicit conversion of int to ptr	First_ECU.c
+diagnostics: 100	123	Compiled Successfully	First_ECU.c
+diagnostics: 0	127	All files Compiled in 94 ms	 
+hint: 0	1144	Used RX (bytes): 32 (100%)   Free RX (bytes): 0 (0%)	Used RX (bytes): 32 (100%)   Free RX (bytes): 0 (0%)
+hint: 0	1144	Static RAM (bytes): 23   Dynamic RAM (bytes): 2024	Static RAM (bytes): 23   Dynamic RAM (bytes): 2024
+hint: 0	1144	Used ROM (bytes): 2218 (7%)  Free ROM (bytes): 30550 (93%)	Used ROM (bytes): 2218 (7%)  Free ROM (bytes): 30550 (93%)
+diagnostics: 0	125	Project Linked Successfully	First_ECU.mcpds
+diagnostics: 0	128	Linked in 156 ms	 
+diagnostics: 0	129	Project 'First_ECU.mcpds' completed: 406 ms	 
+diagnostics: 0	103	Finished successfully: 14 May 2025, 12:22:29	First_ECU.mcpds
